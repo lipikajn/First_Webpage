@@ -1,0 +1,51 @@
+/*First apply properties to entire body*/
+
+*{ /*Universal Selector*/
+    margin:0;
+    padding:0;
+    font-family: 'Varela Round', sans-serif;  /*If Varela round is not supported by browser, sans serif will be font n if this not then default*/
+}
+
+.outer-container{
+    height: 100vh; /*VH viewport height - 100% of VH*/
+    width: 100%;
+    background-color:#FCF6EF;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;  /* Padding get inside box */
+    position: relative;
+    display: flex; /* here flex is desktop first */
+    align-items: center;
+    justify-content: center; /*justify content = horizontal alignment*/
+}
+
+.inner-container{
+    height: 80vh;
+    width: 80vw;
+    background-color:#BDDBE3;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 24px;
+}
+
+.logo-image{
+    height: 50px;
+    margin-left: 2vw;
+    margin-top:2vh;
+}
+
+nav{     /*As nav is not class . will not come*/
+    display: flex;
+    padding-left: 60px;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
